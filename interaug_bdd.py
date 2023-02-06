@@ -178,7 +178,7 @@ class RandAugment:
           img = op(image, boxes,level)
                   
         return img
-class contextAug:
+class InterAug:
    
     def __call__(self, img, boxs):
         #return_dict={}        
@@ -291,7 +291,7 @@ def custom_mapper(dataset_dicts):
                 for x in pre_annos
             ]
             
-    aug = contextAug()
+    aug = InterAug()
     image = aug(image, boxes)
     dataset_dict["image"] = torch.as_tensor(np.ascontiguousarray(image.transpose(2, 0, 1)))
     category_id2 = np.arange(len(dataset_dict["annotations"]))
