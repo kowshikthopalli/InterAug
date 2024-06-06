@@ -1,4 +1,4 @@
-# Context-Aware Augmentations for Data-Efficient Object Detection
+# Improving Object Detectors by Exploiting Bounding Boxes for Augmentation Design
 
 This is the PyTorch implementation of Improving Object Detectors by Exploiting Bounding Boxes for Augmentation Design, Accepted at IEEE ACCESS
 
